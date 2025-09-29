@@ -1,1 +1,18 @@
-data/
+# Local datasets (keep folder, ignore contents)
+data/**
+!data/.gitkeep
+
+# Outputs/logs
+results/**
+logs/**
+
+# Large artifacts
+*.pkl
+*.fa
+*.fa.fai
+*.rar
+*.cpgz
+
+# SLURM logs
+slurm-*.out
+slurm-*.err
