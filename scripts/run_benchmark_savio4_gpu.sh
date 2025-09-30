@@ -1,13 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=mmethyl-bench
-#SBATCH --account=fc_moilab
 #SBATCH --partition=savio4_gpu
-#SBATCH --time=06:00:00
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --account=fc_moilab
+#SBATCH --gres=gpu:A5000:1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:a5000:1
-#SBATCH --mem=32G
+#SBATCH --mem=16G
+#SBATCH --time=1-12:00:00
+#SBATCH --ntasks=1
 #SBATCH --output=logs/benchmark_%j.out
 #SBATCH --error=logs/benchmark_%j.err
 
