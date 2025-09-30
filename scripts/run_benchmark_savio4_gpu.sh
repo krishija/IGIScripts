@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=mmethyl-bench
+#SBATCH --account=fc_moilab
 #SBATCH --partition=savio4_gpu
-#SBATCH --qos=savio_normal
 #SBATCH --time=06:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
