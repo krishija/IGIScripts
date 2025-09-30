@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=mmethyl-bench
 #SBATCH --partition=savio4_gpu
-#SBATCH --account=fc_moilab
+#SBATCH --account=co_moilab
 #SBATCH --gres=gpu:A5000:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=16G
